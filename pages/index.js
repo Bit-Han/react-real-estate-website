@@ -4,9 +4,9 @@ import { Flex, Box, Text, Button } from '@chakra-ui/react';
 import Property from '../components/Property';
 import { baseUrl, fetchApi } from '../utils/fetchApi';
 
-const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, imageurl }) => (
+const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, imageUrl }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
-    <image src={imageurl} width={500} height={300} alt="banner" />
+    <Image src={imageUrl} width={500} height={300} alt="banner" />
     <Box p="5">
       <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
       <Text fontSize="3xl" fontWeight="bold">{title1}<br />{title2}</Text>
@@ -28,8 +28,8 @@ export default function Home({ propertyForSale, propertyForRent }) {
         desc1="Explore Apartment, Villas, Homes"
         desc2="and More"
         buttonText="Explore Renting"
-        linkName="/search?purpose=for-rent"
-        imageurl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
+        linkName='/search?purpose=for-rent'
+        imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
       />
       <Flex flexWrap="wrap">
         {propertyForRent.map((property) => <Property property={property} key={property.id} />)}
@@ -41,8 +41,8 @@ export default function Home({ propertyForSale, propertyForRent }) {
         desc1="Explore Apartment, Villas, Homes"
         desc2="and More"
         buttonText="Explore Buying"
-        linkName="/search?purpose=for-sale"
-        imageurl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008' />
+        linkName='/search?purpose=for-sale'
+        imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008' />
       <Flex flexWrap="wrap">
         {propertyForSale.map((property) => <Property property={property} key={property.id} />)}
       </Flex>
