@@ -37,3 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # react-real-estate-website
 This is a beautiful designed react real estate website that uses rapid API and chakra UI.
 >>>>>>> 14a2f65eb066b537958a37c7cad2315ffe7ec27d
+
+## APP Depolyment 
+
+you can check out the app deployment here 
+
+https://real-estate-website-steel.vercel.app/
