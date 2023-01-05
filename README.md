@@ -42,4 +42,4 @@ This is a beautiful designed react real estate website that uses rapid API and c
 
 you can check out the app deployment here 
 
-https://real-estate-website-steel.vercel.app/
+https://real-estate-website-bit-han.vercel.app/
